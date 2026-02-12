@@ -5,16 +5,16 @@ class Point2D:
         #disponibles en toda la clase con self.variable
         self.x=None
         self.y=None
-        
+
         self.setX(x)
         self.setY(y)
 
     #setter--> Comprueban datos de entrada
     def setX(self,x):
-        self.x=self.__checkValue(x)
+        self.x=self._checkValue(x)
     #setter
     def setY(self,y):
-        self.y=self.__checkValue(y)
+        self.y=self._checkValue(y)
 
     def printCoordinates(self):
         a=10 #variables locales. Solo viven aquí
@@ -34,7 +34,7 @@ class Point2D:
     
     
     #método privado. Empieza por __
-    def __checkValue(self, value):
+    def _checkValue(self, value):
         try:
             value=float(value)
         except Exception:
@@ -42,3 +42,12 @@ class Point2D:
         if value<0:
             raise Exception("Negative values are not allowed")
         return value
+    
+class Point3D(Point2D):
+    def __init__(self, x, y, z):
+        self.z=None
+        super().__init__(x, y)
+        self.z=self._checkValue(z)
+
+if __name__=="__main__":
+    p=Point3D(1,2,3)   
