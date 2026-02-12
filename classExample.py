@@ -35,4 +35,15 @@ Create the class point3d that inherits from Point2d and:
     To redefine you have to use super.method()
 """
 
+"""
+Define a class called TwoPointOperator.
+The constructor receives two points 2d and has two methods:
+    sum() --> returns a point with the x and y as the 
+        sum of the x and y of the two points.
+    substract() --> returns a point 2d with the x and y of 
+        the pt1 - x e y of the pt2
+    average() --> Returns a point 2d with the average of the 
+        coordinates of both points
+"""
+
 
