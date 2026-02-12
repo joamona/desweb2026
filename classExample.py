@@ -44,7 +44,6 @@ The constructor receives two points 2d and has tree methods:
         the pt1 - x e y of the pt2
     average() --> Returns a point 2d with the average of the 
         coordinates of both points
-
 """
 
 
