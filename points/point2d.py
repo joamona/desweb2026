@@ -3,6 +3,9 @@ class Point2D:
     def __init__(self, x, y):
         #variables de instancia
         #disponibles en toda la clase con self.variable
+        self.x=None
+        self.y=None
+        
         self.setX(x)
         self.setY(y)
 

@@ -31,9 +31,8 @@ Create the class point3d that inherits from Point2d and:
 - Add the z coordinate
 - Add the setZ setter
 - Redefine the methods getAsList and getAsDict to return also the z
-- Redefine the methos translate to translate also the z.
-
-
+- Redefine the method translate to translate also the z.
+    To redefine you have to use super.method()
 """
 
 
