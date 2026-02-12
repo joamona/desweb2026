@@ -1,0 +1,106 @@
+### DEFAULT GITIGNORE ###
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+
+
+# Backup files # 
+*.bak 
+
+
+# Python # 
+*.py[cod] 
+*$py.class 
+
+# Distribution / packaging 
+.Python build/ 
+develop-eggs/ 
+dist/ 
+downloads/ 
+eggs/ 
+.eggs/ 
+lib/ 
+lib64/ 
+parts/ 
+sdist/ 
+var/ 
+wheels/ 
+*.whl
+*.egg-info/ 
+.installed.cfg 
+*.egg 
+*.manifest 
+*.spec 
+
+# Installer logs 
+pip-log.txt 
+pip-delete-this-directory.txt 
+
+# Unit test / coverage reports 
+htmlcov/ 
+.tox/ 
+.coverage 
+.coverage.* 
+.cache 
+.pytest_cache/ 
+nosetests.xml 
+coverage.xml 
+*.cover 
+.hypothesis/ 
+
+# Jupyter Notebook 
+.ipynb_checkpoints 
+
+# pyenv 
+.python-version 
+
+# celery 
+celerybeat-schedule.* 
+
+# SageMath parsed files 
+*.sage.py 
+
+# Environments 
+.venv 
+env/ 
+venv/ 
+ENV/ 
+env.bak/ 
+venv.bak/ 
+
+# mkdocs documentation 
+/site 
+
+# Visual Studio Code # 
+.vscode/* 
+!.vscode/settings.json 
+!.vscode/tasks.json 
+!.vscode/launch.json 
+!.vscode/extensions.json 
+.history
+
+### CUSTOM GITIGNORE ###
+#production variables. --- DANGER ---> Hackers are expecting you to upload your server credentials
+.env.prod
+#folder with the postgis data
+postgis-data
+#pgadmin4 data folder for develop environment
+pgadmin4
+#pgadmin4 data folder for production environment
+pgadmin4_prod
+#geoserver data
+geoserver-data
+
+#migration files for the django project
+migrations/*
+**/migrations/*
+#keep the __init__.py files in the migration folders
+!migrations/__init__.py
+!**/migrations/__init__.py
+
+djangoapi/.dotnet
+djangoapi/.vscode-server
+djangoapi/.ash_history
